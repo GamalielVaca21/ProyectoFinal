@@ -1,0 +1,108 @@
+
+.declara ul{
+    width: 750px;
+    list-style-type: none;
+    list-style-type: outside;
+    margin: 0; padding: 0;
+}
+
+.declara li{
+    padding: 12px;
+    border-bottom: 1px solid #4f0220;
+    position: relative;
+}
+
+.declara li:first-child,
+.declara li:last-child{
+    border-bottom: 1px solid #252121;
+}
+
+.declara h2{
+    margin: 0; display: inline;
+}
+
+.required_notification{
+    color: #d4d4d4;
+    margin: 5px 0,0,0; 
+    display: inline;
+    float: right;
+}
+
+.declara label{
+    width: 150px; 
+    margin-top: 3px; 
+    display: inline-block;
+    padding: 3px;
+}
+
+
+.declara input{
+    width: 220px; height: 20px; padding: 5px 8px;
+    border: 1px solid #d4d4d4;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #f5dede inset; 
+    border-radius: 2px;
+    padding-right: 30px;
+    transition: padding .25s;
+}
+
+
+.declara input:focus{
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(163, 101, 30);
+    box-shadow: 0 0 3px rgb(255, 106, 0);
+    padding-right: 70px;
+}
+
+.form_hint{
+    background: #e87777;
+    border-radius: 3px;
+    color: rgb(251, 243, 243);
+    margin-left: 8px;
+    padding: 1px 6px;
+    z-index: 999;
+    position: absolute;
+    display: none;
+}
+
+.form_hint::before{
+    color: #da8787;
+    position: absolute;
+    top: 1px;
+    left: -6px;
+}
+
+.declara input:focus + .form_hint{
+    display: inline;
+}
+
+.declara input:required:valid + .form_hint{
+    background: rgb(255, 0, 21);
+}
+
+.declara input:required:valid + .form_hint::before{
+    background: #732b24;
+}
+
+button.submit{
+    background: rgb(215, 10, 27);
+    background: linear-gradient(top, #b12f2f, #911e1e);
+    border: 1px solid #343434;
+    border-bottom: 1px solid black;
+    border-radius: 3px;
+    box-shadow: insert 0 1px 0 #9fd574;
+    color: azure;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -px 0 #f5dede;
+}
+
+button.submit:hover{
+    opacity: .85px;
+    cursor: pointer;
+}
+
+button.submit:active{
+    box-shadow: 0 0 1px 5px #6b0b0b;
+
+}
